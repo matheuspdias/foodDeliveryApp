@@ -1,0 +1,40 @@
+{
+  "categories": [
+    { 
+      "id": "1",
+      "name":  "Noses",
+      "slug": "noses",
+      "cover": "https://cdn-icons-png.flaticon.com/512/7293/7293200.png"
+    },
+    { 
+      "id": "2",
+      "name":  "Vegetais",
+      "slug": "vegetais",
+      "cover": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Noun_Project_vegetables_icon_1422990_cc.svg/1200px-Noun_Project_vegetables_icon_1422990_cc.svg.png"
+    },
+    { 
+      "id": "3",
+      "name":  "Frutas",
+      "slug": "frutas",
+      "cover": "https://cdn-icons-png.flaticon.com/512/3081/3081887.png"
+    },
+    { 
+      "id": "4",
+      "name":  "Sem Gluten",
+      "slug": "sem_gluten",
+      "cover": "https://crussh.com/wp-content/uploads/2022/09/icon-gluten-free.png"
+    },
+    { 
+      "id": "5",
+      "name":  "Lanches",
+      "slug": "lanches",
+      "cover": "https://cdn-icons-png.flaticon.com/512/2776/2776827.png"
+    },
+    { 
+      "id": "7",
+      "name":  "Sem Foto",
+      "slug": "sem_foto",
+      "cover": null
+    }
+  ]
+}
