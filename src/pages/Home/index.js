@@ -11,9 +11,11 @@ import {
 import { Ionicons } from "@expo/vector-icons";
 import api from "../../services/api";
 import CardCategory from "../../components/CardCategory";
+import CardProduct from "../../components/CardProduct";
 
 export default function Home() {
   const [categories, setCategories] = useState([]);
+  const [products, setProducts] = useState([]);
 
   const [selectedId, setSelectedId] = useState(null);
 
@@ -30,6 +32,18 @@ export default function Home() {
     }
     getCategories();
   }, []);
+
+  useEffect(() => {
+    async function fetchProducts() {
+      const response = await api.get(`/products?category.id=${selectedId}`);
+      setProducts(response.data);
+      console.log(products, selectedId);
+    }
+
+    if (selectedId) {
+      fetchProducts();
+    }
+  }, [selectedId]);
 
   return (
     <SafeAreaView style={styles.container}>
@@ -68,6 +82,15 @@ export default function Home() {
           horizontal={true}
           showsHorizontalScrollIndicator={false}
         />
+      </View>
+      <View style={styles.flatListCardsArea}>
+        {products && (
+          <FlatList
+            data={products}
+            keyExtractor={(item) => String(item.id)}
+            renderItem={({ item }) => <CardProduct data={item} />}
+          />
+        )}
       </View>
     </SafeAreaView>
   );
@@ -124,5 +147,9 @@ const styles = StyleSheet.create({
   flatListCategoryArea: {
     height: 130,
     width: "100%",
+  },
+  flatListCardsArea: {
+    width: "100%",
+    backgroundColor: "cyan",
   },
 });

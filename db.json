@@ -1,40 +1,122 @@
 {
   "categories": [
-    { 
+    {
       "id": "1",
-      "name":  "Noses",
+      "name": "Noses",
       "slug": "noses",
       "cover": "https://cdn-icons-png.flaticon.com/512/7293/7293200.png"
     },
-    { 
+    {
       "id": "2",
-      "name":  "Vegetais",
+      "name": "Vegetais",
       "slug": "vegetais",
       "cover": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Noun_Project_vegetables_icon_1422990_cc.svg/1200px-Noun_Project_vegetables_icon_1422990_cc.svg.png"
     },
-    { 
+    {
       "id": "3",
-      "name":  "Frutas",
+      "name": "Frutas",
       "slug": "frutas",
       "cover": "https://cdn-icons-png.flaticon.com/512/3081/3081887.png"
     },
-    { 
+    {
       "id": "4",
-      "name":  "Sem Gluten",
+      "name": "Sem Gluten",
       "slug": "sem_gluten",
       "cover": "https://crussh.com/wp-content/uploads/2022/09/icon-gluten-free.png"
     },
-    { 
+    {
       "id": "5",
-      "name":  "Lanches",
+      "name": "Lanches",
       "slug": "lanches",
       "cover": "https://cdn-icons-png.flaticon.com/512/2776/2776827.png"
     },
-    { 
+    {
       "id": "7",
-      "name":  "Sem Foto",
+      "name": "Sem Foto",
       "slug": "sem_foto",
       "cover": null
+    }
+  ],
+  "products": [
+    {
+      "id": 7,
+      "name": "banana",
+      "slug": "banana",
+      "category": {
+        "id": "3",
+        "name": "Frutas"
+      },
+      "cover": "https://cdn-icons-png.flaticon.com/512/2776/2776827.png"
+    },
+    {
+      "id": 8,
+      "name": "maçã",
+      "slug": "maca",
+      "category": {
+        "id": "3",
+        "name": "Frutas"
+      },
+      "cover": "https://cdn-icons-png.flaticon.com/512/3081/3081887.png"
+    },
+    {
+      "id": 9,
+      "name": "cenoura",
+      "slug": "cenoura",
+      "category": {
+        "id": "2",
+        "name": "Vegetais"
+      },
+      "cover": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Noun_Project_vegetables_icon_1422990_cc.svg/1200px-Noun_Project_vegetables_icon_1422990_cc.svg.png"
+    },
+    {
+      "id": 10,
+      "name": "laranja",
+      "slug": "laranja",
+      "category": {
+        "id": "3",
+        "name": "Frutas"
+      },
+      "cover": "https://cdn-icons-png.flaticon.com/512/3081/3081887.png"
+    },
+    {
+      "id": 11,
+      "name": "alface",
+      "slug": "alface",
+      "category": {
+        "id": "2",
+        "name": "Vegetais"
+      },
+      "cover": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Noun_Project_vegetables_icon_1422990_cc.svg/1200px-Noun_Project_vegetables_icon_1422990_cc.svg.png"
+    },
+    {
+      "id": 12,
+      "name": "Noses 1",
+      "slug": "noses_1",
+      "category": {
+        "id": "1",
+        "name": "Noses"
+      },
+      "cover": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Noun_Project_vegetables_icon_1422990_cc.svg/1200px-Noun_Project_vegetables_icon_1422990_cc.svg.png"
+    },
+    {
+      "id": 13,
+      "name": "Noses 2",
+      "slug": "noses_2",
+      "category": {
+        "id": "1",
+        "name": "Noses"
+      },
+      "cover": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Noun_Project_vegetables_icon_1422990_cc.svg/1200px-Noun_Project_vegetables_icon_1422990_cc.svg.png"
+    },
+    {
+      "id": 14,
+      "name": "Noses 3",
+      "slug": "noses_3",
+      "category": {
+        "id": "1",
+        "name": "Noses"
+      },
+      "cover": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Noun_Project_vegetables_icon_1422990_cc.svg/1200px-Noun_Project_vegetables_icon_1422990_cc.svg.png"
     }
   ]
 }
