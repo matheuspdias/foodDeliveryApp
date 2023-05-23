@@ -83,15 +83,18 @@ export default function Home() {
           showsHorizontalScrollIndicator={false}
         />
       </View>
-      <View style={styles.flatListCardsArea}>
-        {products && (
-          <FlatList
-            data={products}
-            keyExtractor={(item) => String(item.id)}
-            renderItem={({ item }) => <CardProduct data={item} />}
-          />
-        )}
-      </View>
+      {products && (
+        <FlatList
+          data={products}
+          numColumns={2}
+          content
+          ListEmptyComponent={<Text>Nenhum item nessa categoria</Text>}
+          scrollEnabled={true}
+          showsVerticalScrollIndicator={false}
+          keyExtractor={(item) => String(item.id)}
+          renderItem={({ item }) => <CardProduct data={item} />}
+        />
+      )}
     </SafeAreaView>
   );
 }
@@ -147,9 +150,5 @@ const styles = StyleSheet.create({
   flatListCategoryArea: {
     height: 130,
     width: "100%",
-  },
-  flatListCardsArea: {
-    width: "100%",
-    backgroundColor: "cyan",
   },
 });
